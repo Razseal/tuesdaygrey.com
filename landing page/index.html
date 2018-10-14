@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="em">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Webpage of TuesdayGrey: Twitch Partner, voiceover actress and content creator"/>
+		<meta name="keywords" content="Twitch, Twitch Partner, TuesdayGrey, Voice Over, Voiceover Actress, Content Creator"/>
+		<meta name="robots" content="noindex/nofollow"/>
+		<title>TuesdayGrey</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body class="black">
+		<div class="content center container">
+			<div class="row">
+				<h1>TuesdayGrey.com</h1>
+				<hr/>
+				<h3>Coming Soon!</h3>
+				<br/>
+				<h4><a href="https://twitch.tv/tuesdaygrey">~>Visit Tuesday's Twitch Stream Here<~</a></h4>
+			</div>
+		<!--<div class="row hide-small" id="twitch-embed"></div>-->
+		</div>
+		<!-- scripts -->
+		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+		<script type="text/javascript">
+		  var embed = new Twitch.Embed("twitch-embed", {
+			width: 854,
+			height: 480,
+			channel: "tuesdaygrey",
+			layout: "video",
+			autoplay: false
+		  });
+		  embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+			var player = embed.getPlayer();
+			player.play();
+		  });
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
